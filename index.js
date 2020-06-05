@@ -20,6 +20,9 @@ function numberGenerator(){
     number1=Math.floor(Math.random()*7);
     number2=Math.floor(Math.random()*7);
 
+    console.log(number1);
+    console.log(number2);
+
     if(number1===1){
         imgOne.src="images/dice1.png";
     }
@@ -35,11 +38,9 @@ function numberGenerator(){
     else if(number1===5){
         imgOne.src="images/dice5.png";
     }
-    else if(number1===0){
-        number1=6;
-        imgTwo.src="images/dice6.png";
-    }
+   
     else{
+        number1=6;
         imgOne.src="images/dice6.png";
     }
 
@@ -60,16 +61,12 @@ function numberGenerator(){
     else if(number2===5){
         imgTwo.src="images/dice5.png";
     }
-    else if(number2===0){
+  
+    else{
         number2=6;
         imgTwo.src="images/dice6.png";
-        
     }
-    else{
-        imgTwo.src="images/dice6.png";
-    }
-    console.log(number1);
-    console.log(number2);
+    
     
     if(number1===number2){
         //console.log("its a draw");
